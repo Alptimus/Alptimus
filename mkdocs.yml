@@ -1,4 +1,6 @@
 site_name: API.log
+site_description: The developer's personal log, filtering the noise of the AI world into hard-won findings.
+site_url: http://www.example.com
 theme:
     name: material
     features:
@@ -6,6 +8,7 @@ theme:
         - navigation.footer
         - search.suggest
         - search.highlight
+        # - navigation.indexes
 markdown_extensions:
     - pymdownx.highlight:
           anchor_linenums: true
@@ -18,4 +21,16 @@ markdown_extensions:
     - md_in_html
 extra:
     generator: false
-    quote: "Talk is cheap. Show me the code."
+    # social:
+    #     - icon: fontawesome/brands/mastodon
+    #       name: squidfunk on Mastodon
+    #       link: https://fosstodon.org/@squidfunk
+plugins:
+    - search
+    - blog:
+        blog_toc: true
+nav:
+  - Home: index.md
+  - Blog:
+     - blog/index.md
+     - blog/posts/llamafile_docker.md
