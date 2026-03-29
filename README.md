@@ -8,13 +8,21 @@ I'm a developer focused on **Agentic AI** and its real-world applications. I doc
 
 ## 🚀 Currently Focused On
 
-**[API.log](https://github.com/Alptimus/Alptimus)** — A developer's personal journal documenting:
+**[API.log](https://alptimus.github.io/Alptimus/)** — A developer's personal journal documenting:
 - Hard-won findings from AI and software development
 - Technical tutorials and practical guides
 - Structured learning paths for Django and AWS development
 - Clear how-tos filtered from noise and AI-generated content
 
-## 📚 Currently Learning
+## � External Projects
+
+Portfolio of applied AI work at [AIMP Labs](https://www.aimplabs.org/):
+- **RAG Chatbots** — Framework-free Retrieval-Augmented Generation systems on CPU and cloud GPU
+- **Legal AI** — Specialized chatbot for interpreting Indian legal codes
+
+[Explore external projects →](https://alptimus.github.io/Alptimus/external-projects/)
+
+## �📚 Currently Learning
 
 - Agentic AI & its practical applications
 - Cloud architecture patterns and scaling strategies
