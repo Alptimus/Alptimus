@@ -1,7 +1,7 @@
 ---
 date:
     created: 2025-11-18
-    modified: 2025-11-18
+    modified: 2026-03-30
 ---
 
 # Run LLMs Anywhere as a Single File with Docker
@@ -130,6 +130,79 @@ The response that's printed should look like the following:
       "total_tokens" : 116
    }
 }
+```
+
+## Troubleshooting Common Issues
+
+### Port Already in Use
+
+**Problem**: `docker run` fails with error: `Error response from daemon: Ports are not available: listen tcp 0.0.0.0:1111: bind: address already in use`
+
+**Solution**: Use a different port. Either modify the `PORT` environment variable during build or map to a different host port:
+
+```bash
+docker run -d -p 8888:1111 --name llamafile-server llamafile-docker
+```
+
+Then access the API at `http://localhost:8888` instead of `http://localhost:1111`.
+
+To find what's using port 1111 on your machine:
+
+```bash
+lsof -i :1111  # Linux/macOS
+netstat -ano | findstr :1111  # Windows
+```
+
+### Out of Memory Errors
+
+**Problem**: Container crashes with `Segmentation fault` or `CUDA out of memory` errors.
+
+**Solution**: The Llamafile model is 1.3GB+ and requires sufficient system RAM. Allocate more memory to Docker:
+
+1. Update Docker Desktop settings (macOS/Windows):
+   - Settings → Resources → Memory: Increase from default (usually 2GB) to 8GB+ if available
+
+2. For Linux, no per-container limit is needed, but ensure your system has sufficient free RAM:
+
+```bash
+free -h  # Check available RAM
+```
+
+Alternatively, use a smaller model by changing `LLAMAFILE_URL` during build.
+
+### HTTPS/Certificate Errors During Download
+
+**Problem**: Build fails with `curl: (60) SSL certificate problem: unable to get local issuer certificate`
+
+**Solution**: Update CA certificates in the Dockerfile or use an HTTP URL if available:
+
+```dockerfile
+RUN apt-get update && apt-get install -y ca-certificates && update-ca-certificates
+```
+
+If using an older base image, try upgrading to `debian:bookworm-slim` or add explicit cert handling:
+
+```bash
+RUN curl --cacert /etc/ssl/certs/ca-certificates.crt ...
+```
+
+### API Endpoint Not Responding
+
+**Problem**: Curl requests to the API fail with `Connection refused` or `No route to host`.
+
+**Solution**: Verify the container is running and listening on the correct port:
+
+```bash
+docker ps | grep llamafile  # Check if container is running
+docker logs llamafile-server  # Check container logs for startup errors
+curl -v http://localhost:1111/v1/models  # Verbose output to debug connection
+```
+
+If the port in your curl command doesn't match the mapped port, requests will fail. Verify your `docker run` command maps the port correctly:
+
+```bash
+# If you ran: docker run -p 8888:1111 llamafile-docker
+# Then access the API at: http://localhost:8888 (not 1111)
 ```
 
 ## Customization Options
