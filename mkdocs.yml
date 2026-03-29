@@ -21,10 +21,16 @@ markdown_extensions:
     - md_in_html
 extra:
     generator: false
-    # social:
-    #     - icon: fontawesome/brands/mastodon
-    #       name: squidfunk on Mastodon
-    #       link: https://fosstodon.org/@squidfunk
+    social:
+        - icon: fontawesome/brands/github
+          name: GitHub
+          link: https://github.com/Alptimus
+        - icon: fontawesome/brands/linkedin
+          name: LinkedIn
+          link: https://www.linkedin.com/in/abhishekacharya11/
+        - icon: fontawesome/solid/heart
+          name: Ko-fi
+          link: https://ko-fi.com/alptimus
 plugins:
     - search
     - blog:

@@ -25,3 +25,9 @@ Portfolio of applied AI work at [AIMP Labs](https://www.aimplabs.org/):
 - Agentic AI & its practical applications
 - Cloud architecture patterns and scaling strategies
 - Developer tooling and automation frameworks
+
+## ☕ Support My Work
+
+If you find these resources helpful, consider supporting me on Ko-fi:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/alptimus)
