@@ -1,0 +1,109 @@
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+<html>
+
+    <head>
+
+        <title> Profile management | Edenthought </title>
+        
+        <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/morph/bootstrap.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
+
+    </head>
+
+    {% include 'lynx/account-navbar.html' %}
+
+
+    <br>
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3> Update username and email </h3>
+
+        <br>
+
+        <form method="POST" autocomplete="off">
+
+            {% csrf_token %}
+
+            {{user_form.username|as_crispy_field}}
+
+            <br>
+
+            {{user_form.email|as_crispy_field}}
+
+            <br>
+
+            <input class="btn btn-primary" type="submit" value="Update"/>
+
+            <br>
+
+
+        </form>
+
+    </div>
+
+    <br>
+
+
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3> Upload your profile picture </h3>
+
+        <hr>
+
+        <br>
+
+
+        <form method="POST" autocomplete="off" enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+            {{profile_form.profile_pic|as_crispy_field}}
+
+            <br> <br>
+
+            <input class="btn btn-primary" type="submit" value="Update"/>
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+    <br>
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+
+        <h3> Account deletion </h3>
+
+        <br>
+
+        <a href="{% url 'delete-account' %}"> Delete account </a>
+
+
+    </div>
+
+    <br>
+
+
+
+    <script src="{% static 'js/app.js' %}"> </script>
+
+
+</html>
+
+
+
+
+
