@@ -47,13 +47,13 @@ To apply the model changes to the database, perform migrations:
 python manage.py makemigrations
 ```
 
-![migrations](../../assets/section_4/migration.png)
+![migrations](assets/section_4/migration.png)
 
 ```
 python manage.py migrate
 ```
 
-![migrate](../../assets/section_4/migrate.png)
+![migrate](assets/section_4/migrate.png)
 
 If the migration process completes without errors, your database is ready for use.
 
@@ -99,53 +99,15 @@ python manage.py createsuperuser
 
 Follow the prompts to set the *username, email, and password* for the superuser.
 
-![sudo](../../assets/section_4/sudo.png)
+![sudo](assets/section_4/sudo.png)
 
 ### Admin Panel Access
 
 Access the admin panel using the superuser credentials at [localhost:port/admin](localhost:port/admin) while the server is running.
 
-![admin_panel](../../assets/section_4/admin_panel.png)  
+![admin_panel](assets/section_4/admin_panel.png)  
 
-![admin](../../assets/section_4/admin.png)  
-
-## Authentication  
-
-Django provides built-in authentication features for user management.
-
-### Django Forms
-
--   Define user registration form in `forms.py`:
-
-    ```py title="your_app_name/forms.py"
-    from django.contrib.auth.models import User
-    from django.contrib.auth.forms import UserCreationForm
-
-    # For User Registration
-    class CreateUserForm(UserCreationForm):
-        class Meta:
-            model = User
-            fields = ['username', 'email', 'password1', 'password2']
-    ```
-
--   Update `views` to handle user registration:
-
-    ```py title="your_app_name/views.py"
-    from django.shortcuts import render, redirect
-    from .forms import CreateUserForm
-    from .models import User, Profile
-
-    def index(request):
-        return render(request, 'your_app_name/index.html')
-
-    def register(request):
-        form = CreateUserForm()
-        if request.method == 'POST':
-            form = CreateUserForm(request.POST)
-            if form.is_valid():
-                current_user = form.save(commit=False)
-                form.save()
-                profile = Profile.objects.create(user=current_user)
+![admin](assets/section_4/admin.png)
                 return redirect('login')
         
         context = {'form': form}
@@ -207,7 +169,7 @@ Crispy Forms is a popular third-party Django application that provides a conveni
     </div>
     ```
 
-    ![register](../../assets/section_4/register.png) 
+    ![register](assets/section_4/register.png) 
 
 After registration, users can log in using their credentials.
 
@@ -215,10 +177,10 @@ After registration, users can log in using their credentials.
 
 After completing the form accurately, you will be redirected to the `login` page.
 
-![demo](../../assets/section_4/demo.png)  
+![demo](assets/section_4/demo.png)  
 
 The admin panel now displays a user named 'demo'.
 
-![user_demo](../../assets/section_4/user_demo.png)  
+![user_demo](assets/section_4/user_demo.png)  
 
 **Note: The remaining part of the Django Tutorial will be updated soon!**

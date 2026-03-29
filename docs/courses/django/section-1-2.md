@@ -18,22 +18,22 @@ This course is suitable for learners with:
 
 ## Course Structure
 
-![Overview](../../assets/section_1/focus.png)  
+![Overview](assets/section_1/focus.png)  
 Overview of the course objectives and structure.
 
-![Phase 1.1](../../assets/section_1/phase_1.1.png)  
+![Phase 1.1](assets/section_1/phase_1.1.png)  
 Introduction to AWS Fundamentals.
 
-![Phase 1.2](../../assets/section_1/phase_1.2.png)  
+![Phase 1.2](assets/section_1/phase_1.2.png)  
 Building and Deploying Django Applications on AWS.
 
-![Phase 2](../../assets/section_1/phase_2.png)  
+![Phase 2](assets/section_1/phase_2.png)  
 CI/CD Pipelines with AWS CodePipeline and CodeDeploy.
 
-![Phase 3](../../assets/section_1/phase_3.png)  
+![Phase 3](assets/section_1/phase_3.png)  
 Monitoring and Logging with AWS CloudWatch.
 
-![Phase 4](../../assets/section_1/phase_4.png)  
+![Phase 4](assets/section_1/phase_4.png)  
 Advanced Topics: Serverless Computing, Containers, and more.
 
 ## What You'll Learn

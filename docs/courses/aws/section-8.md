@@ -6,7 +6,7 @@ Amazon Simple Email Service (SES) is a cloud-based email sending service to send
 
 ### Overview
 
-![overview](../../assets/section_8/ses/overview.png)
+![overview](assets/section_8/ses/overview.png)
 
 ### Setting up SES
 
@@ -18,11 +18,11 @@ It is an domain, subdomain or an email to utilize to send emails through SES.
 
     -   SES Dashboard &rarr; Identities &rarr; Create identity &rarr; Indentity Details: Email address &rarr; Set email address  &rarr; `Create Identity`  
 
-    ![identity](../../assets/section_8/ses/identity.png)  
+    ![identity](assets/section_8/ses/identity.png)  
 
     -   Verify the provided email address.
 
-        ![verify](../../assets/section_8/ses/verify.png)  
+        ![verify](assets/section_8/ses/verify.png)  
 
 -   To address:  
     
@@ -65,13 +65,13 @@ Test your SES configuration by sending a test email using Python shell:
     send_mail("Subject", "Body", "From address", ["To address 1", "To address 2"])
     ```
 
-    ![sendmail](../../assets/section_8/ses/sendmail.png)  
+    ![sendmail](assets/section_8/ses/sendmail.png)  
 
     A success output "1" confirms the email was sent.
 
 -   Verify:
 
-    ![email_sent](../../assets/section_8/ses/email.png)  
+    ![email_sent](assets/section_8/ses/email.png)  
 
 #### Production Access
 
@@ -79,7 +79,7 @@ Here we don't need to add any sender email address, rather we can mail any email
 
 -   SES Dashboard &rarr; View get set up page &rarr; Request production access  &rarr; Fill the form as per your requirements &rarr; `Submit request`
 
-    ![production_access](../../assets/section_8/ses/prod.png)  
+    ![production_access](assets/section_8/ses/prod.png)  
 
 -   Further details on production access can be found [here](https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html)
 
@@ -89,7 +89,7 @@ Amazon Elastic Beanstalk (EB) simplifies the deployment and management of web ap
 
 ### Overview
 
-![overview](../../assets/section_8/eb/overview.png)
+![overview](assets/section_8/eb/overview.png)
 
 ### Setting up EB
 
@@ -103,7 +103,7 @@ pip install pyyaml==5.3.1 awsebcli
 
 After installation, type `eb` in the terminal to confirm successful setup.
 
-![ebcli](../../assets/section_8/eb/cli.png)  
+![ebcli](assets/section_8/eb/cli.png)  
 
 For additional macOS instructions, refer to the [guide](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-osx.html)
 

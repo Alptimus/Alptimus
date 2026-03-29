@@ -4,7 +4,7 @@
 
 Before proceeding with AWS configuration, it's crucial to understand the network setup.  
 
-![network](../../assets/section_5/network.png)  
+![network](assets/section_5/network.png)  
 
 ## Creating an AWS Account
 
@@ -24,7 +24,7 @@ While setting the AWS Region might seem straightforward, it's important to note 
 
 Creating a budget ensures you can manage your AWS expenses effectively.
 
-![budgets](../../assets/section_6/budgets.png)  
+![budgets](assets/section_6/budgets.png)  
 
 #### Steps to Create a Budget
 
@@ -52,7 +52,7 @@ Creating a budget ensures you can manage your AWS expenses effectively.
 
 Upon successful creation, your budget will be visible in the AWS Budgets dashboard.
 
-![set_budget](../../assets/section_6/set_budget.png)
+![set_budget](assets/section_6/set_budget.png)
 
 ## Additional Resources
 

@@ -4,7 +4,7 @@
 
 Understanding and managing costs is essential when working with AWS. Refer to the [AWS Pricing](https://aws.amazon.com/pricing/) page for detailed information.
 
-![Cost Reminder](../../assets/section_7/cost.png)
+![Cost Reminder](assets/section_7/cost.png)
 
 ## Identity and Access Management (IAM)
 
@@ -12,25 +12,25 @@ IAM enables you to manage access to AWS services securely.
 
 ### Overview
 
-![IAM](../../assets/section_7/iam/iam_overview.png)
+![IAM](assets/section_7/iam/iam_overview.png)
 
 ### Users & Group
 
 IAM allows you to organize users into groups and manage permissions efficiently.
 
-![users_group](../../assets/section_7/iam/users_group.png)
+![users_group](assets/section_7/iam/users_group.png)
 
 ### Policies
 
 Policies define permissions and access control for IAM users and groups.
 
-![policies](../../assets/section_7/iam/policies.png)
+![policies](assets/section_7/iam/policies.png)
 
 ### Access Keys
 
 Access keys are used for programmatic access to AWS services.
 
-![keys](../../assets/section_7/iam/keys.png)
+![keys](assets/section_7/iam/keys.png)
 
 ## IAM User and Group Creation
 
@@ -40,13 +40,13 @@ Creating IAM users and groups involves the following steps:
 
 -   IAM Dashboard &rarr; User groups &rarr; Create group &rarr; Group name (e.g, developers) &rarr; Attach Permission policies: Administrator Access, IAMU &rarr; `Create group`  
 
-    ![developers](../../assets/section_7/iam/developers.png)  
+    ![developers](assets/section_7/iam/developers.png)  
 
 ### Create a User
 
 -   IAM Dashboard &rarr; Users &rarr; Create User &rarr; Username &rarr; Provide user access &rarr; Create an IAM user &rarr; Set custom password &rarr; Next &rarr; Add user to the group &rarr; Next &rarr; `Create user`
 
-    ![user](../../assets/section_7/iam/user.png)
+    ![user](assets/section_7/iam/user.png)
 
 After completing the steps, users have the option to `email` the instructions or `download` them as a `.csv` file. Downloading as a `.csv` is recommended for easier access and offline reference.
 
@@ -56,15 +56,15 @@ Access IAM dashboard and sign in using credentials or alias.
 
 -   IAM Dashboard &rarr; AWS Account &rarr; `Create alias`  
 
-    ![alias](../../assets/section_7/iam/alias.png)
+    ![alias](assets/section_7/iam/alias.png)
 
 -   Access the login URL created by the alias and log in using your credentials (from the downloaded .csv file).  
 
-    ![iam_login](../../assets/section_7/iam/iam_login.png)
+    ![iam_login](assets/section_7/iam/iam_login.png)
 
 -   Upon successful login, account details will be displayed in the right-side panel.  
 
-    ![login](../../assets/section_7/iam/login.png)
+    ![login](assets/section_7/iam/login.png)
 
 **Note:** It's essential to use IAM User accounts for accessing AWS resources and services. The Root user account should be reserved solely for account setup and billing management purposes.
 
@@ -74,15 +74,15 @@ Enabling Multi-Factor Authentication (MFA) enhances account security.
 
 -   IAM Dashboard &rarr; Add MFA &rarr; Device name &rarr; Authenticar app (recommended e.g, Google) &rarr; Input the required fields &rarr; `Add MFA`  
 
-    ![mfa](../../assets/section_7/iam/mfa.png)  
+    ![mfa](assets/section_7/iam/mfa.png)  
 
 -   After completing the setup, confirm the authentication in your dashboard.  
 
-    ![confirm_mfa](../../assets/section_7/iam/confirm_mfa.png)  
+    ![confirm_mfa](assets/section_7/iam/confirm_mfa.png)  
 
 -   Repeat the same process to set up MFA for your Root user.  
 
-    ![root_mfa](../../assets/section_7/iam/root_mfa.png)  
+    ![root_mfa](assets/section_7/iam/root_mfa.png)  
 
 ### Setting Up Access Keys
 
@@ -90,7 +90,7 @@ To facilitate communication between our application and AWS services like S3 buc
 
 -   IAM Dashboard &rarr; Users &rarr; Select user &rarr; Security credentials &rarr; Creat Access Keys &rarr; Local code &rarr; Next &rarr; Skip tag &rarr; `Create`  
 
-    ![access_keys](../../assets/section_7/iam/access_keys.png)
+    ![access_keys](assets/section_7/iam/access_keys.png)
 
 Be sure to download the generated `.csv` file for future reference.
 
@@ -104,9 +104,9 @@ S3 provides object storage for a wide range of use cases.
 
 ### Overview
 
-![s3](../../assets/section_7/s3/s3_overview.png)  
+![s3](assets/section_7/s3/s3_overview.png)  
 
-![s3_work](../../assets/section_7/s3/s3_work.png)
+![s3_work](assets/section_7/s3/s3_work.png)
 
 ### Setting up S3
 
@@ -116,7 +116,7 @@ Specify bucket name and configure access settings.
 
 -   Navigate to S3 &rarr; Create bucket &rarr; Give bucket name &rarr; **Uncheck Block all public access** &rarr; `Create bucket`
 
-    ![bucket](../../assets/section_7/s3/bucket.png)
+    ![bucket](assets/section_7/s3/bucket.png)
 
 #### Tweak Permissions
 
@@ -131,11 +131,11 @@ Configure bucket policies for public access.
         -   Principal: *
         -   Actions: GetObject
         -   Copy & Paste the ARN and add a forward / with *  
-            ![s3_policy](../../assets/section_7/s3/s3_policy.png)  
+            ![s3_policy](assets/section_7/s3/s3_policy.png)  
 
 -   Add Statement &rarr; Generate Policy &rarr; Copy the JSON Policy &rarr; Paste in Bucket Policy &rarr; `Save changes`
 
-    ![s3_policy_update](../../assets/section_7/s3/s3_policy_update.png)
+    ![s3_policy_update](assets/section_7/s3/s3_policy_update.png)
 
 ### Integration
 
@@ -180,7 +180,7 @@ To configure your models for S3 integration, follow these steps:
     python manage.py migrate
     ```
 
-    ![migrate](../../assets/section_7/s3/pf_migrate.png)
+    ![migrate](assets/section_7/s3/pf_migrate.png)
 
     This ensures that the necessary database changes are made to accommodate the new configuration.
 
@@ -228,7 +228,7 @@ Upload static files to your S3 bucket for serving content usign these steps:
 
 1.  Check if your S3 bucket is empty.  
 
-    ![empty](../../assets/section_7/s3/empty_bucket.png)  
+    ![empty](assets/section_7/s3/empty_bucket.png)  
 
 2.  Run the following command in your terminal and select `yes` to confirm:
 
@@ -236,13 +236,13 @@ Upload static files to your S3 bucket for serving content usign these steps:
     python manage.py collectstatic
     ```
 
-    ![collect](../../assets/section_7/s3/collect.png)
+    ![collect](assets/section_7/s3/collect.png)
 
 3.  Wait for a few minutes for the files to be uploaded to your S3 bucket.
 
 4.  Refresh your S3 bucket to ensure all the files are successfully uploaded.
 
-    ![fill](../../assets/section_7/s3/fill.png)  
+    ![fill](assets/section_7/s3/fill.png)  
 
 **Note**: If you encounter any issues while loading the `default.png` file, ensure it is located in the root folder of your S3 bucket.
 
@@ -252,7 +252,7 @@ RDS offers managed database services for various database engines.
 
 ### Overview
 
-![rds](../../assets/section_7/rds/rds.png)  
+![rds](assets/section_7/rds/rds.png)  
 
 ### Setting up RDS
 
@@ -262,7 +262,7 @@ Follow these steps to set up your PostgreSQL database using Amazon RDS:
 
 -   Go to RDS &rarr; Resources &rarr; DB Instances &rarr; Create database &rarr; Standard create &rarr; PostgreSQL &rarr; Free tier &rarr; DB instance identifier (arno-aws-course-postgredb) &rarr; Master username (e.g, postgres_1) &rarr; Set password &rarr; DB instance class &rarr; db.t3.micro &rarr; Storage (default) &rarr; Connectivity &rarr; **Public Access: Yes** &rarr; Additional config &rarr; DB port &rarr; Monitoring (default) &rarr; **Additional Configuration** &rarr; Set database name (e.g, arno_aws_course) &rarr; `Create database`
 
-    ![db](../../assets/section_7/rds/db.png)
+    ![db](assets/section_7/rds/db.png)
 
 #### Set Inbound Rules
 
@@ -273,7 +273,7 @@ Follow these steps to set up your PostgreSQL database using Amazon RDS:
     -   Type: PostgreSQL, Source: any IPv6 ::/0  
 4.  Click on "Save rules" to apply the changes.  
 
-![inbound](../../assets/section_7/rds/inbound.png)  
+![inbound](assets/section_7/rds/inbound.png)  
 
 ### Integration
 
@@ -312,7 +312,7 @@ Follow these steps to connect your database:
 
     Run your Django server and check if there are any unapplied migrations. If you see a message similar to the one shown in the screenshot below, it means your database is successfully connected:  
 
-    ![post_migrate](../../assets/section_7/rds/post_migrate.png)  
+    ![post_migrate](assets/section_7/rds/post_migrate.png)  
 
 2.  **Stop the Server and Run Migrations**:  
 
@@ -335,39 +335,39 @@ Route 53 is a scalable domain name system (DNS) web service.
 
 Here's an overview of Route 53, including its use cases, DNS resolution, various routing policies, and examples:
 
-![route53](../../assets/section_7/route53/overview.png)  
+![route53](assets/section_7/route53/overview.png)  
 
 -   **Use Cases**:  
 
-    ![usecase](../../assets/section_7/route53/usecase.png)  
+    ![usecase](assets/section_7/route53/usecase.png)  
 
 -   **DNS Resolution**:  
     
-    ![dns](../../assets/section_7/route53/dns_reso.png)  
+    ![dns](assets/section_7/route53/dns_reso.png)  
 
 -   **DNS Records**:  
 
-    ![records](../../assets/section_7/route53/dns_records.png)  
+    ![records](assets/section_7/route53/dns_records.png)  
 
 -   **Routing Policies**:  
 
-    ![policies](../../assets/section_7/route53/routing_policies.png)  
+    ![policies](assets/section_7/route53/routing_policies.png)  
 
 -   **Simple Routing**:  
 
-    ![simple](../../assets/section_7/route53/simple.png)  
+    ![simple](assets/section_7/route53/simple.png)  
 
 -   **Weighted Routing**:  
 
-    ![weighted](../../assets/section_7/route53/weighted.png)  
+    ![weighted](assets/section_7/route53/weighted.png)  
 
 -   **Failover Routing**:  
     
-    ![fail](../../assets/section_7/route53/failover.png)  
+    ![fail](assets/section_7/route53/failover.png)  
 
 -   **Latency Routing**:  
 
-    ![latency](../../assets/section_7/route53/latency.png)  
+    ![latency](assets/section_7/route53/latency.png)  
 
 ### Setup Route53
 
@@ -381,7 +381,7 @@ If you already have a domain, you can transfer its registration to Route53 using
 4.  Select your domain and check the price.
 5.  Proceed to checkout.  
 
-![buy](../../assets/section_7/route53/buy.png)
+![buy](assets/section_7/route53/buy.png)
 
 ### Integration
 
@@ -389,9 +389,9 @@ If you already have a domain, you can transfer its registration to Route53 using
 
 Amazon Certificate Manager (ACM) enables you to provision, manage, and deploy SSL/TLS certificates for use with AWS services.
 
-![acm](../../assets/section_7/route53/acm.png)  
+![acm](assets/section_7/route53/acm.png)  
 
-![https](../../assets/section_7/route53/https.png)  
+![https](assets/section_7/route53/https.png)  
 
 **Important:** To apply a certificate, you must have purchased a domain name; otherwise, this step is not applicable. You can `skip` this part if you don't have a domain name.
 
@@ -403,20 +403,20 @@ Provision SSL certificates and configure DNS records for secure communication
 2.  Request a certificate and choose "Request a public certificate."
 3.  Add domain names for which you want to generate the certificate.  
 
-    ![ssl](../../assets/section_7/route53/ssl.png)  
+    ![ssl](assets/section_7/route53/ssl.png)  
 
 4.  Choose the validation method as DNS and select any key algorithm. Then, click on "Request."
 
 5.  After generating the certificate, note the CNAME name and CNAME value.  
 
-    ![config](../../assets/section_7/route53/cert_config.png)
+    ![config](assets/section_7/route53/cert_config.png)
 
 6.  Go to Hosted Zones and navigate to your registered domain.
 7.  Create a new record:  
 
     -   Enter the CNAME name in the Record name field.  
 
-        ![cname](../../assets/section_7/route53/cname.png)  
+        ![cname](assets/section_7/route53/cname.png)  
 
     **Note**: Don't forget to remove ".yourwebsite.com" from the end of the CNAME.
 
@@ -424,6 +424,6 @@ Provision SSL certificates and configure DNS records for secure communication
     -   Choose the record type as CNAME and add another record for the www DNS.  
     -   Click on "Create records."
 
-    ![record](../../assets/section_7/route53/record.png)
+    ![record](assets/section_7/route53/record.png)
 
 **Important**: SSL validation may take up to several hours or 1-2 days. Please wait until the status shows "Issued."

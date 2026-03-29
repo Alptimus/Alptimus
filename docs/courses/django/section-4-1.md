@@ -16,7 +16,7 @@
 
 - Verify that the server is running by visiting [http://localhost:8000/](http://localhost:8000/) in your web browser.
 
-    ![Django Run](../../assets/section_3/django.png)
+    ![Django Run](assets/section_3/django.png)
 
 ## Working on the App
 
@@ -138,7 +138,7 @@ Follow these steps to configure static files:
 
 -   Create a `static` folder in the root directory directory of your project.  
     
-    ![static](../../assets/section_4/static.png)  
+    ![static](assets/section_4/static.png)  
 
 -   Inside the `static` folder, create subfolders for CSS, JavaScript, and other assets.
 
@@ -193,12 +193,12 @@ Sometimes changes to static files may not reflect immediately due to browser cac
 
 1.  **Hard Reload:** Developer Tools &rarr; Right-click on reload button &rarr; Empty Cache.
 
-    ![hard_reload](../../assets/section_4/hard.png)
+    ![hard_reload](assets/section_4/hard.png)
 
 2.  **Use Incognito Tab:** Open the project in an incognito tab to avoid caching.   
     <sub>(recommended)</sub>  
 
-    ![icognito](../../assets/section_4/icognito.png)
+    ![icognito](assets/section_4/icognito.png)
 
 ##  Running the Project
 
@@ -210,6 +210,6 @@ python manage.py runserver
 
 If the server starts successfully, and you see the Django welcome page, congratulations! You have successfully set up a basic Django project.  
 
-![Django_1](../../assets/section_4/django_1.png)  
+![Django_1](assets/section_4/django_1.png)  
 
-![Django_2](../../assets/section_4/django_2.png)  
+![Django_2](assets/section_4/django_2.png)  
