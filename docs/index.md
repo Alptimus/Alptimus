@@ -13,3 +13,11 @@ Welcome to API.log. This is my central repository where I document my developer 
 
 - **November 18** — [Run LLMs Anywhere as a Single File with Docker](blog/posts/llamafile_docker.md)  
   Eliminate environment setup hassles by wrapping a Llamafile in Docker. Build once, run anywhere.
+
+## Courses
+
+### [Django Course](courses/django/index.md)
+Complete guide to Django fundamentals and scalable architecture. Covers introduction, baseline setup, hands-on development, and scaling strategies.
+
+### [AWS Course](courses/aws/index.md)
+Master AWS infrastructure and cloud integration. Learn configuration, deployment phases, and cloud-native patterns for modern applications.
