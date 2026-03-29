@@ -1,16 +1,21 @@
-## Hi there 👋
+# Hi there 👋
 
-<!--
-**Alptimus/Alptimus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a developer focused on **Agentic AI** and its real-world applications. I document my findings, experiments, and hard-won learnings across AI development, cloud architecture, and developer tooling.
 
-Here are some ideas to get you started:
+## 🔗 Connect
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **LinkedIn**: [abhishekacharya11](https://www.linkedin.com/in/abhishekacharya11/) — For detailed work history, experience, and professional background
+
+## 🚀 Currently Focused On
+
+**[API.log](https://github.com/Alptimus/Alptimus)** — A developer's personal journal documenting:
+- Hard-won findings from AI and software development
+- Technical tutorials and practical guides
+- Structured learning paths for Django and AWS development
+- Clear how-tos filtered from noise and AI-generated content
+
+## 📚 Currently Learning
+
+- Agentic AI & its practical applications
+- Cloud architecture patterns and scaling strategies
+- Developer tooling and automation frameworks
