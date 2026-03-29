@@ -1,6 +1,6 @@
 site_name: API.log
 site_description: The developer's personal log, filtering the noise of the AI world into hard-won findings.
-site_url: http://www.example.com
+site_url: https://alptimus.github.io/Alptimus/
 theme:
     name: material
     features:
