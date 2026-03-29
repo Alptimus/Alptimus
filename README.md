@@ -8,13 +8,9 @@ I'm a developer focused on **Agentic AI** and its real-world applications. I doc
 
 ## 🚀 Currently Focused On
 
-- **[API.log](https://alptimus.github.io/Alptimus/)** — A developer's personal journal documenting:
-  - Hard-won findings from AI and software development
-  - Technical tutorials and practical guides
-  - Structured learning paths for Django and AWS development
-  - Clear how-tos filtered from noise and AI-generated content
+- **[API.log](https://alptimus.github.io/Alptimus/)** — A developer's personal journal: battle-tested AI insights, hands-on tutorials, and structured learning paths.
 
-- **[Script-Hub](https://github.com/Alptimus/Script-Hub)** — A personal collection of bash scripts for system administration and automation. Each script handles specific tasks like package updates, system maintenance, and environment setup.
+- **[Script-Hub](https://github.com/Alptimus/Script-Hub)** — A personal collection of bash scripts for system administration and automation.
 
 ## 🌐 External Projects
 
