@@ -12,21 +12,21 @@ Each project below includes context, key technologies, and a link to the full im
 
 ## Featured Projects
 
-### [LangChain-Free RAG Chatbot: Budget 2024 (Part I)](chatbot-budget-cpu.md)
+### [LangChain-Free RAG Chatbot: Budget 2024 (Part I)](https://www.aimplabs.org/blogs/chatbot-budget2024/index.html)
 Build a custom Retrieval-Augmented Generation chatbot without heavy frameworks. Uses India's Budget 2024 as a practical example, running on local CPU with Llamafile, FAISS, and TF-IDF embeddings—no API keys or expensive hardware required.
 
 **Tech Stack**: Python, Llamafile, FAISS, TF-IDF, local CPU inference
 
 ---
 
-### [LangChain-Free RAG Chatbot: Budget 2024 (Part II)](chatbot-budget-colab.md)
+### [LangChain-Free RAG Chatbot: Budget 2024 (Part II)](https://www.aimplabs.org/blogs/chatbot-budget2024-colab/)
 The same RAG chatbot approach, but running on Google Colab's free GPU. Learn how to leverage cloud resources without paying for expensive infrastructure—ideal for rapid prototyping and development.
 
 **Tech Stack**: Python, Llamafile, Google Colab GPU, FAISS, TF-IDF
 
 ---
 
-### [Legal AI ChatBot: Navigate Indian Laws](legal-ai-chatbot.md)
+### [Legal AI ChatBot: Navigate Indian Laws](https://www.aimplabs.org/innovations.html)
 An AI-powered chatbot designed to interpret and explain India's recently enacted legal codes (BNS, BNSS, BSA). Provides contextual legal guidance for professionals, students, and citizens seeking quick, accurate legal information.
 
 **Tech Stack**: Python, legal domain knowledge integration, RAG, conversational AI

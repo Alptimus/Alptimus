@@ -54,6 +54,3 @@ nav:
       - AWS Integration Phase-II: courses/aws/section-8.md
   - External Projects:
      - external-projects/index.md
-     - Chatbot Budget (CPU): external-projects/chatbot-budget-cpu.md
-     - Chatbot Budget (Colab): external-projects/chatbot-budget-colab.md
-     - Legal AI ChatBot: external-projects/legal-ai-chatbot.md
