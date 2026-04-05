@@ -2,8 +2,6 @@
 
 Welcome to API.log. This is my central repository where I document my developer journey by sharing the hard-won findings, bug fixes, clear how-tos, and genuinely useful tips I've filtered from the noise of vast, often ephemeral information and AI-generated content.
 
-You'll find three types of content here: **practical blog posts** on AI, development, and tooling; **structured courses** for Django and AWS mastery; and **featured external projects** showcasing applied AI work.
-
 ## Latest Posts
 
 - [Run LLMs Anywhere as a Single File with Docker](blog/posts/llamafile_docker.md) - November 18, 2025  
@@ -31,7 +29,7 @@ A curated portfolio of applied AI projects from [AIMP Labs](https://www.aimplabs
 ### [LangChain-Free RAG Chatbot: Budget 2024](external-projects/index.md)
 Build production-ready RAG chatbots without heavy frameworks. Two implementations—local CPU and Google Colab GPU—using Llamafile, FAISS, and TF-IDF embeddings.
 
-### [Legal AI ChatBot: Navigate Indian Laws](external-projects/legal-ai-chatbot.md)
+### [Legal AI ChatBot: Navigate Indian Laws](external-projects/index.md)
 An AI-powered chatbot for interpreting India's recently enacted legal codes (BNS, BNSS, BSA). Helpful for legal professionals, students, and citizens seeking contextual legal guidance.
 
 👉 [View all external projects →](external-projects/index.md)

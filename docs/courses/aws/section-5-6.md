@@ -28,8 +28,6 @@ Creating a budget ensures you can manage your AWS expenses effectively.
 
 #### Steps to Create a Budget
 
-<!-- Need to check which one is looking better ? -->
-
 1. **Navigate to Budgets**: Go to [AWS Budgets](https://us-east-1.console.aws.amazon.com/billing/home#/budgets) and select "Create Budget."
 
 2. **Customize Budget**: Choose "Customized (advanced)" and select "Cost Budget."
@@ -41,12 +39,6 @@ Creating a budget ensures you can manage your AWS expenses effectively.
 5. **Set Alert Threshold**: Define the alert threshold percentage and provide email addresses for notifications.
 
 6. **Review and Create**: Review your budget details and create the budget.
-
-<!-- Need to check which one is looking better ? -->
-
-<!-- Go to [AWS Budgets](https://us-east-1.console.aws.amazon.com/billing/home#/budgets) &rarr; Create Budget &rarr; **Customized (advanced)** &rarr; **Cost Budget** &rarr; Budget Name &rarr; Set budget amount: **Monthly** &rarr; **Recurring** budget &rarr; Start Month &rarr; **Fixed** &rarr; Budget scope: **All AWS services** &rarr; `Next` -->
-
-<!-- -   Set Alert Thresold (any %) &rarr; Enter emails &rarr; `Next` &rarr; Review &rarr; `Create budget` -->
 
 #### Budget Creation Result
 
